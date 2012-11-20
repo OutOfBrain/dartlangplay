@@ -44,5 +44,17 @@ class FactoryConstructors {
 }
 
 
+void globalFunction(functionArg) {
+  print(functionArg);
+}
+
+void globalFunctionTest() {
+  globalFunction(globalFunction);
+  globalFunction(() {});
+  globalFunction((num e) {return e; });
+  globalFunction(() => 1);
+  globalFunction((num e) => e);
+}
+
 void main() {
 }
