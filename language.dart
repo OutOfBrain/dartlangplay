@@ -56,5 +56,12 @@ void globalFunctionTest() {
   globalFunction((num e) => e);
 }
 
+
+class AnonymousMembers {
+  void mem1(x, y) => x*y;
+  mem2(x, y) => x*y;
+}
+
+
 void main() {
 }
