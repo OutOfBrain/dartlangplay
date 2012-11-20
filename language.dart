@@ -63,5 +63,45 @@ class AnonymousMembers {
 }
 
 
+class GetterSetter {
+  num a;
+
+  get x => a;
+  set x(x) => a = x;
+}
+
+
+class GetterSetterFinal {
+  final num a = 10;
+
+  get x => a;
+}
+
+
+int get globalGetter {
+  return 5;
+}
+
+set globalGetter(x) {
+}
+
+
+callAnonymousFunction() {
+  () {return 5;}();
+  (() => 2)();
+  '''${(() => '${8}')()}''';
+}
+
+
+void nestedFunctions(a) {
+
+  void nestedFunctions2() {
+    print(a);
+  }
+
+  nestedFunctions2();
+}
+
+
 void main() {
 }
