@@ -113,5 +113,19 @@ class Operator {
   }
 }
 
+
+class AsTestClass {
+  foo() => print('AsTestClass');
+}
+
+asTesterProducer() {
+  return new AsTestClass();
+}
+
+asTester() {
+  (asTesterProducer() as AsTestClass).foo();
+}
+
+
 void main() {
 }
