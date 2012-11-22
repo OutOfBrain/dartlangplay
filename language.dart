@@ -114,9 +114,4 @@ class Operator {
 }
 
 void main() {
-  var op1 = new Operator(3);
-  var op2 = new Operator(5);
-
-  var op3 = op1 + op2;
-  print(op3.val);
-  }
+}
