@@ -103,5 +103,20 @@ void nestedFunctions(a) {
 }
 
 
-void main() {
+class Operator {
+  num val;
+
+  Operator(this.val);
+
+  operator +(Operator other) {
+    return new Operator(this.val + other.val);
+  }
 }
+
+void main() {
+  var op1 = new Operator(3);
+  var op2 = new Operator(5);
+
+  var op3 = op1 + op2;
+  print(op3.val);
+  }
