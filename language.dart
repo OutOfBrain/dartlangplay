@@ -127,5 +127,25 @@ asTester() {
 }
 
 
+class ImplicitInterface {
+  final name = 'ImplicifInterface';
+
+  foo() => '$name';
+}
+
+class ImplicitInterfaceImplementation implements ImplicitInterface {
+  foo() => '$name';
+  String get name => 'implementation'; // still has to be implemented, the same for privates
+}
+
+
+integerDivision() {
+  int i = (9/5) as int; // double division with cast
+  num d = (9~/5) as double;
+}
+
+
+
 void main() {
+
 }
