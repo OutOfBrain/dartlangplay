@@ -160,6 +160,10 @@ optionalParam(required, [optionalOne = 1, optionalTwo]) { // optionalTwo is null
 }
 
 
+optionalParamTest([optional = 2]) {
+  return ?optional; // true if param was provided false if not
+}
+
 
 void main() {
 }
