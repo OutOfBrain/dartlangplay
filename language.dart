@@ -150,6 +150,16 @@ class LazyStaticInitialization {
 }
 
 
+namedParam({namedOne, namedTwo: 2, namedThree}) {
+  return '$namedOne $namedTwo $namedThree';
+}
+
+
+optionalParam(required, [optionalOne = 1, optionalTwo]) { // optionalTwo is null if not set
+  return '$required $optionalOne $optionalTwo';
+}
+
+
 
 void main() {
 }
