@@ -145,7 +145,11 @@ integerDivision() {
 }
 
 
+class LazyStaticInitialization {
+  static final time = new Date.now();
+}
+
+
 
 void main() {
-
 }
